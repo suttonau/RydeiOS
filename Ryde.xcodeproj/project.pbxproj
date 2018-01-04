@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B914B65A483A633166334AF /* Pods_Ryde.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDB8361464D8C6262DE9606 /* Pods_Ryde.framework */; };
 		AF62F0441FFD33C200EA3C23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF62F0431FFD33C200EA3C23 /* AppDelegate.swift */; };
 		AF62F0461FFD33C200EA3C23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF62F0451FFD33C200EA3C23 /* ViewController.swift */; };
 		AF62F0491FFD33C200EA3C23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF62F0471FFD33C200EA3C23 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B080D82232CD6A481E06BE2 /* Pods-Ryde.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ryde.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ryde/Pods-Ryde.debug.xcconfig"; sourceTree = "<group>"; };
+		43167D0FC888CB126FB3934C /* Pods-Ryde.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ryde.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ryde/Pods-Ryde.release.xcconfig"; sourceTree = "<group>"; };
+		4CDB8361464D8C6262DE9606 /* Pods_Ryde.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ryde.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF62F0401FFD33C200EA3C23 /* Ryde.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ryde.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF62F0431FFD33C200EA3C23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF62F0451FFD33C200EA3C23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B914B65A483A633166334AF /* Pods_Ryde.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0FD7C4805BD63833CA549E8F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CDB8361464D8C6262DE9606 /* Pods_Ryde.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB3444107E4B41EA99A13094 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B080D82232CD6A481E06BE2 /* Pods-Ryde.debug.xcconfig */,
+				43167D0FC888CB126FB3934C /* Pods-Ryde.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AF62F0371FFD33C200EA3C23 = {
 			isa = PBXGroup;
 			children = (
 				AF62F0421FFD33C200EA3C23 /* Ryde */,
 				AF62F0411FFD33C200EA3C23 /* Products */,
+				AB3444107E4B41EA99A13094 /* Pods */,
+				0FD7C4805BD63833CA549E8F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AF62F0521FFD33C200EA3C23 /* Build configuration list for PBXNativeTarget "Ryde" */;
 			buildPhases = (
+				E2023BD47833262E4FF6641D /* [CP] Check Pods Manifest.lock */,
 				AF62F03C1FFD33C200EA3C23 /* Sources */,
 				AF62F03D1FFD33C200EA3C23 /* Frameworks */,
 				AF62F03E1FFD33C200EA3C23 /* Resources */,
+				B0EAA3553FCA7F05A5923139 /* [CP] Embed Pods Frameworks */,
+				2F700D4F9FD0251E239E7223 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,68 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F700D4F9FD0251E239E7223 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ryde/Pods-Ryde-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0EAA3553FCA7F05A5923139 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Ryde/Pods-Ryde-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/RevealingSplashView/RevealingSplashView.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealingSplashView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ryde/Pods-Ryde-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2023BD47833262E4FF6641D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Ryde-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AF62F03C1FFD33C200EA3C23 /* Sources */ = {
@@ -272,6 +361,7 @@
 		};
 		AF62F0531FFD33C200EA3C23 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B080D82232CD6A481E06BE2 /* Pods-Ryde.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +377,7 @@
 		};
 		AF62F0541FFD33C200EA3C23 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43167D0FC888CB126FB3934C /* Pods-Ryde.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
