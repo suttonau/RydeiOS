@@ -8,9 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		1B914B65A483A633166334AF /* Pods_Ryde.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CDB8361464D8C6262DE9606 /* Pods_Ryde.framework */; };
+		AF13247F201FA2C100D84CA3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF13247E201FA2C100D84CA3 /* GoogleService-Info.plist */; };
+		AF132482201FAAAA00D84CA3 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF132481201FAAAA00D84CA3 /* DataService.swift */; };
+		AF53C26620168B2C00F3C642 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF53C26520168B2C00F3C642 /* LoginVC.swift */; };
+		AF53C2682016907900F3C642 /* RoundedCornerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF53C2672016907900F3C642 /* RoundedCornerTextField.swift */; };
 		AF54D81720002637000BD7C9 /* LeftSidePanelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF54D81620002637000BD7C9 /* LeftSidePanelVC.swift */; };
 		AF54D819200026D2000BD7C9 /* ContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF54D818200026D2000BD7C9 /* ContainerVC.swift */; };
 		AF54D81C20002AFA000BD7C9 /* CenterVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF54D81B20002AFA000BD7C9 /* CenterVCDelegate.swift */; };
+		AF54D81F200E9507000BD7C9 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF54D81E200E9507000BD7C9 /* UIViewExt.swift */; };
 		AF62F0441FFD33C200EA3C23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF62F0431FFD33C200EA3C23 /* AppDelegate.swift */; };
 		AF62F0461FFD33C200EA3C23 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF62F0451FFD33C200EA3C23 /* HomeVC.swift */; };
 		AF62F0491FFD33C200EA3C23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF62F0471FFD33C200EA3C23 /* Main.storyboard */; };
@@ -27,9 +32,14 @@
 		3B080D82232CD6A481E06BE2 /* Pods-Ryde.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ryde.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ryde/Pods-Ryde.debug.xcconfig"; sourceTree = "<group>"; };
 		43167D0FC888CB126FB3934C /* Pods-Ryde.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ryde.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ryde/Pods-Ryde.release.xcconfig"; sourceTree = "<group>"; };
 		4CDB8361464D8C6262DE9606 /* Pods_Ryde.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ryde.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF13247E201FA2C100D84CA3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AF132481201FAAAA00D84CA3 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		AF53C26520168B2C00F3C642 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		AF53C2672016907900F3C642 /* RoundedCornerTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerTextField.swift; sourceTree = "<group>"; };
 		AF54D81620002637000BD7C9 /* LeftSidePanelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftSidePanelVC.swift; sourceTree = "<group>"; };
 		AF54D818200026D2000BD7C9 /* ContainerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerVC.swift; sourceTree = "<group>"; };
 		AF54D81B20002AFA000BD7C9 /* CenterVCDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterVCDelegate.swift; sourceTree = "<group>"; };
+		AF54D81E200E9507000BD7C9 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
 		AF62F0401FFD33C200EA3C23 /* Ryde.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ryde.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF62F0431FFD33C200EA3C23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF62F0451FFD33C200EA3C23 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -73,6 +83,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		AF132480201FAA9500D84CA3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AF132481201FAAAA00D84CA3 /* DataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		AF54D81A20002AE8000BD7C9 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
@@ -81,10 +99,19 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		AF54D81D200E94DA000BD7C9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AF54D81E200E9507000BD7C9 /* UIViewExt.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		AF62F0371FFD33C200EA3C23 = {
 			isa = PBXGroup;
 			children = (
 				AF62F0421FFD33C200EA3C23 /* Ryde */,
+				AF54D81D200E94DA000BD7C9 /* Extensions */,
 				AF62F0411FFD33C200EA3C23 /* Products */,
 				AB3444107E4B41EA99A13094 /* Pods */,
 				0FD7C4805BD63833CA549E8F /* Frameworks */,
@@ -102,6 +129,7 @@
 		AF62F0421FFD33C200EA3C23 /* Ryde */ = {
 			isa = PBXGroup;
 			children = (
+				AF132480201FAA9500D84CA3 /* Services */,
 				AF54D81A20002AE8000BD7C9 /* Protocols */,
 				AFF248F41FFEFF870069F51B /* Model */,
 				AFF248F31FFEFF7D0069F51B /* View */,
@@ -111,6 +139,7 @@
 				AF62F04A1FFD33C200EA3C23 /* Assets.xcassets */,
 				AF62F04C1FFD33C200EA3C23 /* LaunchScreen.storyboard */,
 				AF62F04F1FFD33C200EA3C23 /* Info.plist */,
+				AF13247E201FA2C100D84CA3 /* GoogleService-Info.plist */,
 			);
 			path = Ryde;
 			sourceTree = "<group>";
@@ -121,6 +150,7 @@
 				AF62F0451FFD33C200EA3C23 /* HomeVC.swift */,
 				AF54D81620002637000BD7C9 /* LeftSidePanelVC.swift */,
 				AF54D818200026D2000BD7C9 /* ContainerVC.swift */,
+				AF53C26520168B2C00F3C642 /* LoginVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -133,6 +163,7 @@
 				AFF248F91FFF05190069F51B /* RoundedShadowView.swift */,
 				AFF248FB1FFF06490069F51B /* CircleView.swift */,
 				AFF248FD1FFF09080069F51B /* RoundedShadowButton.swift */,
+				AF53C2672016907900F3C642 /* RoundedCornerTextField.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -207,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF62F04E1FFD33C200EA3C23 /* LaunchScreen.storyboard in Resources */,
+				AF13247F201FA2C100D84CA3 /* GoogleService-Info.plist in Resources */,
 				AF62F04B1FFD33C200EA3C23 /* Assets.xcassets in Resources */,
 				AF62F0491FFD33C200EA3C23 /* Main.storyboard in Resources */,
 			);
@@ -282,13 +314,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF54D81C20002AFA000BD7C9 /* CenterVCDelegate.swift in Sources */,
+				AF132482201FAAAA00D84CA3 /* DataService.swift in Sources */,
 				AFF248FE1FFF09080069F51B /* RoundedShadowButton.swift in Sources */,
+				AF53C26620168B2C00F3C642 /* LoginVC.swift in Sources */,
 				AF54D81720002637000BD7C9 /* LeftSidePanelVC.swift in Sources */,
 				AFF248FC1FFF06490069F51B /* CircleView.swift in Sources */,
 				AF54D819200026D2000BD7C9 /* ContainerVC.swift in Sources */,
+				AF54D81F200E9507000BD7C9 /* UIViewExt.swift in Sources */,
 				AF62F0461FFD33C200EA3C23 /* HomeVC.swift in Sources */,
 				AFF248F81FFF03E90069F51B /* RoundImageView.swift in Sources */,
 				AFF248FA1FFF05190069F51B /* RoundedShadowView.swift in Sources */,
+				AF53C2682016907900F3C642 /* RoundedCornerTextField.swift in Sources */,
 				AF62F0441FFD33C200EA3C23 /* AppDelegate.swift in Sources */,
 				AFF248F61FFEFFC70069F51B /* GradientView.swift in Sources */,
 			);
